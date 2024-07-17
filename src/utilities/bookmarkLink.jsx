@@ -1,10 +1,11 @@
 export default [
     {
-        class: 'Learn', 
+        class: 'School', 
         icon: 'book', 
         child: [
             'HackMD',
             'TUCaN',
+            'Expatrio',
             'JP Space',
             'elearn',
             'eeclass',
@@ -29,6 +30,7 @@ export default [
         icon: 'toolbox', 
         child: [
             'AQI TW',
+            'G-Drive',
             'G-Calendar',
             'G-Doc',
             'G-Sheet',
