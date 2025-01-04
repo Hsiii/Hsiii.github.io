@@ -1,0 +1,2 @@
+rm -f index.bundle.js index.bundle.js.map vendor.bundle.js vendor.bundle.js.map index.html
+cp ./dist/index.bundle.js ./dist/index.bundle.js.map ./dist/vendor.bundle.js ./dist/vendor.bundle.js.map ./dist/index.html .

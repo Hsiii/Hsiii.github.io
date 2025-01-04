@@ -14,7 +14,7 @@ export default [
         ]
     },
     {
-        class: 'Connect',
+        class: 'SNS',
         icon: 'message',
         child: [
             'Facebook',
