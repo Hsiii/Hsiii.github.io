@@ -22,7 +22,7 @@ export default function CubeSection(props) {
     return (
         <section className='cube-section' id='cube_section'>
             <h1 ref={title}>The cube of social media</h1>
-            <p ref={text}>A spinning cube sounds fun, and a functional spinning cube sounds even better! Then why not put some colorful social media links on the sides and make it spin by clicking the top? Add some additional effects when it spins super fast is also visualy appealing. Also this is just some random text about this section, using lorem to fill is kinda boring.</p>
+            <p ref={text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, aliquid! Laborum quae quidem nam quis quas odio perferendis maxime harum facilis doloremque, mollitia ratione. Culpa qui exercitationem placeat modi voluptatum?ß</p>
             <div className="cube-wrap">
                 <CubeMenu/>
             </div>

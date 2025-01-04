@@ -65,6 +65,7 @@ export default [
             'refern.',
             'Pinterest',
             'Quickposes',
+            'Line of Action',
             'Utaten',
             'Dam'
         ]

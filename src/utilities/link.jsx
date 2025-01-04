@@ -208,6 +208,10 @@ export default function() {
             id: 'G-Drive',
             href: 'https://drive.google.com/drive/u/0/home'
         },
+        {
+            id: 'Line of Action',
+            href: 'https://line-of-action.com/'
+        }
     ]
 
     list.forEach(el => {
