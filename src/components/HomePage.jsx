@@ -5,9 +5,9 @@ import Cover from 'components/CoverOnlyLinks.jsx';
 import setLinks from 'utilities/link.jsx';
 import 'utilities/colorPalette.css';
 
-import 'components/Home.css';
+import 'components/HomePage.css';
 
-export default function HomeOnlyLinks(props) {
+export default function HomePage(props) {
     useEffect(() => {
         setLinks();
     }, []);

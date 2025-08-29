@@ -1,8 +1,8 @@
 import React from 'react';
 
-// import Home from 'components/Home.jsx';
-import Home from 'components/HomeOnlyLinks.jsx';
+import HomePage from 'components/HomePage.jsx';
+import Playground from 'components/Playground.jsx';
 
 export default function Main(props) {
-    return <Home/>;
+    return <HomePage/>;
 }

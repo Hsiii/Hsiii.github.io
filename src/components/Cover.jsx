@@ -48,9 +48,9 @@ export default function Cover(props) {
         <section className='cover'>
             <div className="img-wrap">
                 <div className='sky'/>
-                <img src="image/mountain/back.png" ref={mtBack}/>
-                <img src="image/mountain/mid.png" ref={mtMid}/>
-                <img src="image/mountain/front.png"/>
+                <img src="images/mountain/back.png" ref={mtBack}/>
+                <img src="images/mountain/mid.png" ref={mtMid}/>
+                <img src="images/mountain/front.png"/>
             </div>
 
             <div className="title" onClick={() => setToggle(t => !t)}>

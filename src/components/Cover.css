@@ -112,8 +112,8 @@
     -webkit-text-fill-color: transparent;
 
     font-size: clamp(5rem, 1rem + 10vw, 7rem);
-    font-weight: 100;
-    font-family: 'rubiklight';
+    font-weight: 400;
+    font-family: 'Quicksand';
     text-align: center;
     text-shadow: -2px -2px var(--clr-title-shadow);
     letter-spacing: .5rem;

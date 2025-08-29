@@ -1,2 +1,8 @@
-rm -f index.bundle.js index.bundle.js.map vendor.bundle.js vendor.bundle.js.map index.html
-cp ./dist/index.bundle.js ./dist/index.bundle.js.map ./dist/vendor.bundle.js ./dist/vendor.bundle.js.map ./dist/index.html .
+rm -f index.bundle.js vendor.bundle.js index.html image
+if [ "$1" = "--playground" ]; then
+  cp -r ./playground/images ./playground/
+  cp ./playground/index.bundle.js ./playground/vendor.bundle.js ./playground/index.html ./playground/
+else
+  cp -r ./dist/images ./dist/
+  cp ./dist/index.bundle.js ./dist/vendor.bundle.js ./dist/index.html ./dist/
+fi

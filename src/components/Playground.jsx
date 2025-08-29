@@ -10,9 +10,9 @@ import DragAndDrop from 'components/DragAndDrop.jsx';
 import setLinks from 'utilities/link.jsx';
 import 'utilities/colorPalette.css';
 
-import 'components/Home.css';
+import 'components/HomePage.css';
 
-export default function Home(props) {
+export default function Playground(props) {
     const [showMusicSection, setShowMusicSection] = useState(true);
 
     const handleResize = () => 

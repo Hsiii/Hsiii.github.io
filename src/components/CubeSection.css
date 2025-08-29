@@ -9,7 +9,7 @@
         '. text cube .' auto
         '. . . .' 1fr
         / 1fr 1.2fr 1.2fr 1fr;
-    /* cursor: url('image/cursor.png'), auto; */
+    /* cursor: url('images/cursor.png'), auto; */
     background: linear-gradient(var(--clr-cover-shadow), var(--clr-section-bg));
 
     @media (width < 1080px) {

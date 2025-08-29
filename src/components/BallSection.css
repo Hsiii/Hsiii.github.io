@@ -9,7 +9,7 @@
     font-size: 40px;
     overflow: hidden;
 
-    /* cursor: url('image/cursor-diamond.png'), auto; */
+    /* cursor: url('images/cursor-diamond.png'), auto; */
 
     perspective: 20em;
     perspective-origin: 50% calc(50% - 5em);
