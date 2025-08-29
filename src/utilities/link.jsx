@@ -113,7 +113,7 @@ export default function() {
             href: 'https://app.diagrams.net/'
         },
         {
-            id: 'Train', 
+            id: 'Train Table', 
             href: 'https://tip.railway.gov.tw/tra-tip-web/tip/tip001/tip112/gobytime'
         },
         {
@@ -211,6 +211,26 @@ export default function() {
         {
             id: 'Line of Action',
             href: 'https://line-of-action.com/'
+        },
+        {
+            id: 'OJAD',
+            href: 'https://www.gavo.t.u-tokyo.ac.jp/ojad/phrasing/'
+        },
+        {
+            id: 'SSTM',
+            href: 'https://hackmd.io/@sessatakuma/%E8%AD%B0%E4%BA%8B%E9%8C%B2'
+        },
+        {
+            id: 'React dev',
+            href: 'localhost:3000'
+        },
+        {
+            id: 'Vue dev',
+            href: 'localhost:5173'
+        },
+        {
+            id: 'SSTM dev',
+            href: 'localhost:8080'
         }
     ]
 

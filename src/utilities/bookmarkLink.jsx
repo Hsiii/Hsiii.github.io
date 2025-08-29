@@ -3,14 +3,12 @@ export default [
         class: 'School', 
         icon: 'book', 
         child: [
-            'HackMD',
-            'TUCaN',
-            'Expatrio',
-            'JP Space',
+            'ccxp',
             'elearn',
             'eeclass',
-            'ccxp',
-            'Past Exam'
+            'Past Exam',
+            'TUCaN',
+            'SSTM'
         ]
     },
     {
@@ -26,20 +24,21 @@ export default [
         ]
     },    
     {
-        class: 'Tool', 
+        class: 'Tools', 
         icon: 'toolbox', 
         child: [
+            'HackMD',
+            'OJAD',
             'AQI TW',
+            'Famiport',
+            'Train Table',
             'G-Drive',
-            'G-Calendar',
             'G-Doc',
             'G-Sheet',
             'G-Slide',
             'G-Translate',
+            'G-Calendar',
             'Flowchart',
-            'ChatGPT',
-            'Famiport',
-            'Train',
         ]
     },
     {
@@ -52,20 +51,23 @@ export default [
             'Font Awesome',
             'G-Font',
             'Stylish',
-            'Overleaf'
+            'Overleaf',
+            'React dev',
+            'Vue dev',
+            'SSTM dev',
         ]
     },
     {
         class: 'Media', 
         icon: 'icons', 
         child: [
-            'YouTube',
             'Anigamer',
-            'Hololive',
-            'refern.',
+            'YouTube',
             'Pinterest',
-            'Quickposes',
+            'refern.',
+            'Hololive',
             'Line of Action',
+            'Quickposes',
             'Utaten',
             'Dam'
         ]
