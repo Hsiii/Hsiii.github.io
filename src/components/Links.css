@@ -86,7 +86,8 @@
 
     width: var(--width);
     height: 100vh;
-    padding: var(--padding) 0;
+    padding: 1rem 0;
+    padding-top: var(--padding, 1rem);
     
     display: flex;
     flex-direction: column;
@@ -98,7 +99,7 @@
     
     z-index: 8;
     
-    .link-wrap:hover + &,
+    .link-header:hover + &,
     &:hover {
         translate: var(--width);
     }
@@ -135,7 +136,7 @@
     }
 }
 
-.link-wrap {
+.link-header {
     width: 13.5rem;
     height: 3.4rem;
     padding: .8rem;
