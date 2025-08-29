@@ -86,7 +86,7 @@
 
     width: var(--width);
     height: 100vh;
-    padding-top: 1rem;
+    padding: var(--padding) 0;
     
     display: flex;
     flex-direction: column;

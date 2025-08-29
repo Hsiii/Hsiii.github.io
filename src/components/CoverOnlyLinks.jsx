@@ -2,7 +2,6 @@ import React, {useEffect, useState, useRef} from 'react';
 
 import Links from 'components/Links.jsx';
 import ThemeSwitch from 'components/ThemeSwitch.jsx';
-import linkList from 'utilities/bookmarkLink.jsx';
 
 import 'components/Cover.css'
 
@@ -70,7 +69,7 @@ export default function Cover(props) {
                 </form>
             </div>
 
-            <Links linkList={linkList} show={showLinks}/>
+            <Links show={showLinks}/>
 
             <ThemeSwitch show={showLinks}/>
 
