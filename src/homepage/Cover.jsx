@@ -1,9 +1,6 @@
 import React, {useEffect, useState, useRef} from 'react';
 
 import Links from 'homepage/Links.jsx';
-import mountainBack from 'homepage/images/mountain/back.png'
-import mountainMid from 'homepage/images/mountain/mid.png'
-import mountainFront from 'homepage/images/mountain/front.png'
 import 'homepage/Cover.css'
 
 export default function Cover(props) {
@@ -48,9 +45,9 @@ export default function Cover(props) {
         <section className='cover'>
             <div className="img-wrap">
                 <div className='sky'/>
-                <img src={mountainBack} ref={mtBack}/>
-                <img src={mountainMid} ref={mtMid}/>
-                <img src={mountainFront}/>
+                <img src="images/mountain/back.png" ref={mtBack}/>
+                <img src="images/mountain/mid.png" ref={mtMid}/>
+                <img src="images/mountain/front.png"/>
             </div>
 
             <div className="title" onClick={() => setToggle(t => !t)}>
