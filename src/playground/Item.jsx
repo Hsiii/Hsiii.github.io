@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import 'components/Item.css';
+import 'playground/Item.css';
 
 export default function Item(props) {    
     const [dragging, setDragging] = useState(false);

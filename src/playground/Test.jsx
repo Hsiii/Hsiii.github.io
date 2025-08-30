@@ -1,7 +1,7 @@
 import React from 'react';
 
-import TestForm from 'components/TestForm.jsx';
-import 'components/Test.css';
+import TestForm from 'playground/TestForm.jsx';
+import 'playground/Test.css';
 
 export default function Test(props) {
     return <>

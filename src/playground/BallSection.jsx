@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 
-import Box from 'components/Box.jsx';
-import Ball from 'components/Ball.jsx';
+import Box from 'playground/Box.jsx';
+import Ball from 'playground/Ball.jsx';
 
-import 'components/BallSection.css';
+import 'playground/BallSection.css';
 
 export default function BallSection(props) {
     const [deg, setDeg] = useState(45);

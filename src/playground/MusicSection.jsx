@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import 'components/MusicSection.css';
+import 'playground/MusicSection.css';
 
 export default function MusicSection(props) {
     const [ratio, setRatio] = useState('');

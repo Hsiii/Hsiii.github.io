@@ -1,8 +1,8 @@
 import React from 'react';
 
-import ItemContainer from 'components/Itemcontainer.jsx';
+import ItemContainer from 'playground/Itemcontainer.jsx';
 
-import 'components/DragAndDrop.css';
+import 'playground/DragAndDrop.css';
 
 export default function DragAndDrop(props) {
     return (

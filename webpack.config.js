@@ -12,7 +12,9 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx'], 
     alias: {
-      components: path.resolve(srcPath, 'components'),
+      portfolio: path.resolve(srcPath, 'portfolio'),
+      homepage: path.resolve(srcPath, 'homepage'),
+      playground: path.resolve(srcPath, 'playground'),
       utilities: path.resolve(srcPath, 'utilities'),
       api: path.resolve(srcPath, 'api'),
       images: path.resolve(srcPath, 'images'),

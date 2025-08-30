@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import 'components/ThemeSwitch.css';
+import 'playground/ThemeSwitch.css';
 
 export default function ThemeSwitch(props) {
     const colors = [

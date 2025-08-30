@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 
-import 'components/CubeMenu.css';
+import 'playground/CubeMenu.css';
 
 export default function CubeMenu(props) {
     const pixiv = React.createRef();

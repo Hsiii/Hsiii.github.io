@@ -1,18 +1,17 @@
 import React, { useEffect, useState } from 'react';
 
-import Cover from 'components/Cover.jsx';
-import CubeSection from 'components/CubeSection.jsx';
-import BallSection from 'components/BallSection.jsx';
-import Menu from 'components/Menu.jsx';
-import MusicSection from 'components/MusicSection.jsx';
-import DragAndDrop from 'components/DragAndDrop.jsx';
+import Cover from 'playground/Cover.jsx';
+import CubeSection from 'playground/CubeSection.jsx';
+import BallSection from 'playground/BallSection.jsx';
+import Menu from 'playground/Menu.jsx';
+import MusicSection from 'playground/MusicSection.jsx';
 
 import setLinks from 'utilities/link.jsx';
 import 'utilities/colorPalette.css';
 
-import 'components/HomePage.css';
+import 'playground/HomePage.css';
 
-export default function Playground(props) {
+export default function Main(props) {
     const [showMusicSection, setShowMusicSection] = useState(true);
 
     const handleResize = () => 

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 
-import 'components/BallSim.css';
-import Canvas from 'components/Canvas.jsx';
-import Ball from 'components/Ball.js';
+import 'playground/BallSim.css';
+import Canvas from 'playground/Canvas.jsx';
+import Ball from 'playground/Ball.js';
 
 export default function BallSim(props) {
     const canvasWidth = window.innerWidth;

@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 
-import Cover from 'components/CoverOnlyLinks.jsx';
+import Cover from 'playground/CoverOnlyLinks.jsx';
 
 import setLinks from 'utilities/link.jsx';
 import 'utilities/colorPalette.css';
 
-import 'components/HomePage.css';
+import 'playground/HomePage.css';
 
 export default function HomePage(props) {
     useEffect(() => {

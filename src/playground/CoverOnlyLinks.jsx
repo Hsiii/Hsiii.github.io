@@ -1,9 +1,9 @@
 import React, {useEffect, useState, useRef} from 'react';
 
-import Links from 'components/Links.jsx';
-import ThemeSwitch from 'components/ThemeSwitch.jsx';
+import Links from 'playground/Links.jsx';
+import ThemeSwitch from 'playground/ThemeSwitch.jsx';
 
-import 'components/Cover.css'
+import 'playground/Cover.css'
 
 export default function Cover(props) {
     const mtMid = useRef(null);
@@ -72,10 +72,6 @@ export default function Cover(props) {
             <Links show={showLinks}/>
 
             <ThemeSwitch show={showLinks}/>
-
-            <a className={`scroll-down ${showLinks ? '' : 'hide'}`} href='#music_section'>
-                <i className='fas fa-angle-down'/>
-            </a>
 
             <div className="grad"/>
         </section>

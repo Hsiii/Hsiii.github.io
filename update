@@ -1,15 +1,17 @@
-if [ "$1" = "--playground" ]; then
-  # build playground and copy to ./playground
-  cp -v ./src/main_playground/Main.jsx ./src/components
-  npm run build
-  # overwrite the old files in ./playground
-  cp -rv ./dist/images ./playground
-  cp -v ./dist/index.html ./dist/index.bundle.js ./dist/index.bundle.js.map ./playground
-fi
+# build playground and copy to ./playground
+sed -i '' "s#portfolio#playground#" src/index.jsx
+npm run build
+# overwrite the old files in ./playground
+cp ./dist/index.bundle.js ./dist/index.bundle.js.map ./playground
+
+# build homepage and copy to ./homepage
+sed -i '' "s#playground#homepage#" src/index.jsx
+npm run build
+# overwrite the old files in ./homepage
+cp ./dist/index.bundle.js ./dist/index.bundle.js.map ./homepage
 
 # build Homepage and copy to root directory
-cp -v ./src/main_homepage/Main.jsx ./src/components
+sed -i '' "s#homepage#portfolio#" src/index.jsx
 npm run build
 # overwrite the old files in root directory
-cp -rv ./dist/images ./
-cp -v ./dist/index.html ./dist/index.bundle.js ./dist/index.bundle.js.map ./
+cp ./dist/index.bundle.js ./dist/index.bundle.js.map ./

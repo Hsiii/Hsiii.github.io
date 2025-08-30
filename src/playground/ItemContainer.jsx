@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
-import Item from 'components/Item.jsx';
+import Item from 'playground/Item.jsx';
 
-import 'components/ItemContainer.css';
+import 'playground/ItemContainer.css';
 
 export default function ItemContainer(props) {
     const [child, setChild] = useState(props.child.map(c => <Item content={c}/>));

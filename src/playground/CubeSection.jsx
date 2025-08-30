@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 
-import CubeMenu from 'components/CubeMenu.jsx';
+import CubeMenu from 'playground/CubeMenu.jsx';
 
-import 'components/CubeSection.css';
+import 'playground/CubeSection.css';
 
 export default function CubeSection(props) {
     const observer = new IntersectionObserver(entries => {

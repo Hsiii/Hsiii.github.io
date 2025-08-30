@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import 'components/Ball.css';
+import 'playground/Ball.css';
 
 export default function Ball(props) {
     const [coord, setCoord] = useState({ x: 0, y: 0, z: 0 });

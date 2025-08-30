@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import 'components/Box.css';
+import 'playground/Box.css';
 
 export default function Box(props) {
     const [z, setZ] = useState(5);
