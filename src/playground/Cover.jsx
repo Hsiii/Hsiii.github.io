@@ -3,6 +3,10 @@ import React, {useEffect, useState, useRef} from 'react';
 import Links from 'playground/Links.jsx';
 import ThemeSwitch from 'playground/ThemeSwitch.jsx';
 
+import mountainBack from 'playground/images/mountain/back.png';
+import mountainMid from 'playground/images/mountain/mid.png';
+import mountainFront from 'playground/images/mountain/front.png';
+
 import 'playground/Cover.css'
 
 export default function Cover(props) {
@@ -47,9 +51,9 @@ export default function Cover(props) {
         <section className='cover'>
             <div className="img-wrap">
                 <div className='sky'/>
-                <img src="images/mountain/back.png" ref={mtBack}/>
-                <img src="images/mountain/mid.png" ref={mtMid}/>
-                <img src="images/mountain/front.png"/>
+                <img src={mountainBack} ref={mtBack}/>
+                <img src={mountainMid} ref={mtMid}/>
+                <img src={mountainFront}/>
             </div>
 
             <div className="title" onClick={() => setToggle(t => !t)}>

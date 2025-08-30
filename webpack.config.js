@@ -17,7 +17,6 @@ module.exports = {
       playground: path.resolve(srcPath, 'playground'),
       utilities: path.resolve(srcPath, 'utilities'),
       api: path.resolve(srcPath, 'api'),
-      images: path.resolve(srcPath, 'images'),
     },
   },
 
