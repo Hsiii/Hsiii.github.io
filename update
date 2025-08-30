@@ -3,7 +3,7 @@ if [ "$1" = "--playground" ]; then
   cp ./src/main_playground/Main.jsx ./src/components/Main.jsx
   npm run build
   # overwrite the old files in ./playground
-  cp -r ./dist/images ./playground/images
+  cp -r ./dist/images ./playground
   cp ./dist/index.html ./dist/index.bundle.js ./dist/index.bundle.js.map ./playground/index.html ./playground/index.bundle.js ./playground/index.bundle.js.map
 fi
 
