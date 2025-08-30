@@ -1,12 +1,12 @@
 {
-    "name": "lab-react-weathermood",
+    "name": "hsi-homepage",
     "version": "1.0.0",
-    "description": "WeatherMood allows people to share moods under different weather conditions.",
+    "description": "A personal homepage.",
     "main": "src/index.jsx",
     "scripts": {
-        "build": "webpack -p",
-        "watch": "webpack -w",
-        "dev": "webpack-dev-server",
+        "build": "webpack --mode production",
+        "watch": "webpack -watch --mode development",
+        "dev": "webpack-dev-server --mode development --open --hot",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],

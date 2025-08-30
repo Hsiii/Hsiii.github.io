@@ -18,7 +18,7 @@ export default function HomePage(props) {
         </main>
         <footer>
             <a href="http://www.freepik.com">
-                Cover designed by pikisuperstar / Freepik
+                Cover image designed by pikisuperstar / Freepik
             </a>
         </footer>
     </>
