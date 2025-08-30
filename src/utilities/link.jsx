@@ -222,16 +222,20 @@ export default function() {
         },
         {
             id: 'React dev',
-            href: 'localhost:3000'
+            href: 'http://localhost:3000/'
         },
         {
             id: 'Vue dev',
-            href: 'localhost:5173'
+            href: 'http://localhost:5173/'
         },
         {
             id: 'SSTM dev',
-            href: 'localhost:8080'
-        }
+            href: 'http://localhost:8080/'
+        },
+        {
+            id: 'Haikei',
+            href: 'https://app.haikei.app/'
+        },
     ]
 
     list.forEach(el => {
