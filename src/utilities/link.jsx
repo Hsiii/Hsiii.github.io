@@ -236,6 +236,10 @@ export default function() {
             id: 'Haikei',
             href: 'https://app.haikei.app/'
         },
+        {
+            id: 'Mathpix',
+            href: 'https://snip.mathpix.com/home'
+        },
     ]
 
     list.forEach(el => {

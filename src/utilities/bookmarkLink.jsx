@@ -28,6 +28,7 @@ export default [
         icon: 'toolbox', 
         child: [
             'HackMD',
+            'Mathpix',
             'OJAD',
             'AQI TW',
             'Famiport',
