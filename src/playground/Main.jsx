@@ -9,7 +9,7 @@ import MusicSection from 'playground/MusicSection.jsx';
 import setLinks from 'utilities/link.jsx';
 import 'utilities/colorPalette.css';
 
-import 'playground/HomePage.css';
+import 'playground/Main.css';
 
 export default function Main(props) {
     const [showMusicSection, setShowMusicSection] = useState(true);
@@ -47,7 +47,7 @@ export default function Main(props) {
         </main>
         <footer>
             <a href="http://www.freepik.com">
-                Cover designed by pikisuperstar / Freepik
+                Cover image designed by pikisuperstar / Freepik
             </a>
         </footer>
     </>
