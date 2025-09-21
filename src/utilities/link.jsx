@@ -198,7 +198,7 @@ export default function() {
         },
         {
             id: 'Tetr.io',
-            href: 'tetr.io'
+            href: 'https://tetr.io'
         },
         {
             id: 'Expatrio',
@@ -239,7 +239,10 @@ export default function() {
         {
             id: 'Mathpix',
             href: 'https://snip.mathpix.com/home'
-        },
+        },{
+            id: 'Cooler',
+            href: 'https://coolors.co/'
+        }
     ]
 
     list.forEach(el => {

@@ -7,7 +7,6 @@ export default [
             'elearn',
             'eeclass',
             'Past Exam',
-            'TUCaN',
             'SSTM'
         ]
     },
@@ -19,7 +18,6 @@ export default [
             'Messenger',
             'Discord',
             'Twitter',
-            'Pixiv',
             'Gmail',
         ]
     },    
@@ -30,14 +28,12 @@ export default [
             'HackMD',
             'Mathpix',
             'OJAD',
-            'AQI TW',
             'Famiport',
-            'Train Table',
+            'Train',
             'G-Drive',
             'G-Doc',
             'G-Sheet',
             'G-Slide',
-            'G-Translate',
             'G-Calendar',
             'Flowchart',
         ]
@@ -47,16 +43,17 @@ export default [
         icon: 'code',
         child: [
             'GitHub',
-            'Colab',
             'LeetCode',
-            'Overleaf',
-            'Stylish',
-            'G-Font',
-            'Font Awesome',
+            'Colab',
             'Haikei',
+            'Coolor',
+            'Font Awesome',
+            'G-Font',
             'React dev',
             'Vue dev',
             'SSTM dev',
+            'Stylish',
+            'Overleaf',
         ]
     },
     {
@@ -66,10 +63,9 @@ export default [
             'Anigamer',
             'YouTube',
             'Pinterest',
-            'refern.',
-            'Hololive',
             'Line of Action',
             'Quickposes',
+            'Hololive',
             'Utaten',
             'Dam'
         ]
