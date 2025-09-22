@@ -1,5 +1,5 @@
 .ball {
-    position: ;
+    position: relative;
     top: calc(4em - var(--z));
     left: 5.5em;
 
@@ -10,11 +10,11 @@
         translateZ(var(--y))
         translateX(var(--x));
     transform-style: preserve-3d;
-    transition: .2s;
+    transition: .1s;
 }
 
 .circle {
-    position: ;
+    position: relative;
 
     width: 1em;
     height: 1em;

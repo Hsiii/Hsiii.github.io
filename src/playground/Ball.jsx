@@ -63,7 +63,7 @@ export default function Ball(props) {
     useEffect(() => {
         const grid = toGrid(coord);
         props.updateGrid({x: grid.x, y: grid.y});
-        const nextGrid = toGrid(getNextCoord(coord, .6));
+        const nextGrid = toGrid(getNextCoord(coord, .3));
         if ((grid.x != nextGrid.x || grid.y != nextGrid.y) && !isOut(nextGrid))
             props.updateNextGrid(nextGrid);
         else
@@ -72,8 +72,8 @@ export default function Ball(props) {
 
     useEffect(() => {
         const moveInterval = setInterval(() => {
-            setCoord(c => getNextCoord(c, .3));
-        }, 50);
+            setCoord(c => getNextCoord(c, .1));
+        }, 16);
         return () => {clearInterval(moveInterval)};
     },[coord]);
 

@@ -30,7 +30,7 @@
     background-color: var(--clr-box-top);
     transform: 
         rotateX(90deg) 
-        translateZ(1em) 
+        translateZ(2em) 
         scale(2.5);
     opacity: 1;
     z-index: -1;

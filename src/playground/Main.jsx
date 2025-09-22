@@ -28,11 +28,15 @@ export default function Main(props) {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
-    const sections = ['cube', 'music', 'ball'];
+    const [sections, setSections] = useState(['cube', 'music', 'ball']);
+
+    useEffect(() => {
+        setSections(showMusicSection ? ['cube', 'music', 'ball'] : ['cube', 'ball']);
+    }, [showMusicSection])
 
     return <>
         <main>
-            <Cover/>
+            <Cover showMusic={showMusicSection}/>
 
             <div className='sections'>
                 <CubeSection/>

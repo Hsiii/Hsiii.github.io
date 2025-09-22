@@ -73,7 +73,7 @@ export default function Cover(props) {
 
             <ThemeSwitch show={showLinks}/>
 
-            <a className={`scroll-down ${showLinks ? '' : 'hide'}`} href='#music_section'>
+            <a className={`scroll-down ${showLinks ? '' : 'hide'}`} href={props.showMusic ? '#music_section' : '#cube_section'}>
                 <i className='fas fa-angle-down'/>
             </a>
 
