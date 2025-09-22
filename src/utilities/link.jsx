@@ -113,7 +113,7 @@ export default function() {
             href: 'https://app.diagrams.net/'
         },
         {
-            id: 'Train Table', 
+            id: 'Train', 
             href: 'https://tip.railway.gov.tw/tra-tip-web/tip/tip001/tip112/gobytime'
         },
         {
@@ -240,7 +240,7 @@ export default function() {
             id: 'Mathpix',
             href: 'https://snip.mathpix.com/home'
         },{
-            id: 'Cooler',
+            id: 'Coolor',
             href: 'https://coolors.co/'
         }
     ]
