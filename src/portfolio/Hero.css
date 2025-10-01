@@ -49,9 +49,6 @@
     z-index: 1;
 }
 
-.hero .cat {
-    width: 4rem;
-}
 
 @container hero (max-width: 1024px) {
     .hero .info {

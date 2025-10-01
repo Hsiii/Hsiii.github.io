@@ -10,7 +10,6 @@ export default function Hero() {
                 <h2>Front-End Developer</h2>
                 <p>I enjoy designing and building things.</p>
             </article>
-            <img className='cat' src="images/cat.png" alt="" />
         </section>
     </>;
 }
