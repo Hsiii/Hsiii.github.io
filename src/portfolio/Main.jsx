@@ -7,7 +7,7 @@ import Projects from 'portfolio/Projects';
 import 'portfolio/Main.css';
 import 'utilities/colorPalette_pf.css';
 
-export default function Main(props) {
+export default function Main() {
     return <>
         <main>
             <Hero/>
