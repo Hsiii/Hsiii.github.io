@@ -22,7 +22,7 @@ export default function() {
         },
         {
             id: 'eeclass', 
-            href: 'https://eeclass.nthu.edu.tw/dashboard'
+            href: 'https://oauth.ccxp.nthu.edu.tw/v1.1/authorize.php?response_type=code&client_id=eeclass&redirect_uri=https%3A%2F%2Feeclass.nthu.edu.tw%2Fservice%2Foauth%2F&scope=lmsid+userid&state=&ui_locales=zh-TW'
         },
         {
             id: 'ccxp', 
