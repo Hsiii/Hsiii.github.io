@@ -1,5 +1,5 @@
 .cover {
-    --rise_time: 3s;
+    --rise_time: 1s;
 
     position: relative;
 
@@ -38,6 +38,8 @@
     z-index: 3;
     filter: hue-rotate(var(--hue));
     pointer-events: none;
+
+    will-change: transform;
 
     &::last-child {
         z-index: 5;

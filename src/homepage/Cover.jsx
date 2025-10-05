@@ -1,4 +1,4 @@
-import React, {useEffect, useState, useRef} from 'react';
+import React, {useEffect, useState, useRef, useCallback} from 'react';
 
 import Links from 'homepage/Links.jsx';
 import 'homepage/Cover.css'
@@ -8,19 +8,41 @@ export default function Cover(props) {
     const mtBack = useRef(null);
     const input = useRef(null);
     
-    const dateData = new Date();
-    const time = dateData.getHours() + ':' + dateData.getMinutes().toString().padStart(2, '0');
-    const date = dateData.getMonth() + 1 + '/' + dateData.getDate();
+    const [time, setTime] = useState('');
+    const [date, setDate] = useState('');
+    useEffect(() => {
+        const update = () => {
+            const d = new Date();
+            setTime(`${d.getHours()}:${d.getMinutes().toString().padStart(2, '0')}`);
+            setDate(d.getMonth() + 1 + '/' + d.getDate());
+        };
+        update();
+        const id = setInterval(update, 1000 * 60);
+        return () => clearInterval(id);
+    }, []);
 
     const [toggle, setToggle] = useState(false);
     const [showLinks, setShowLinks] = useState(true);
 
     useEffect(() => {
+        let ticking = false;
+        const onScroll = () => {
+            if (!ticking) {
+            window.requestAnimationFrame(() => {
+                handleScroll();
+                ticking = false;
+            });
+            ticking = true;
+            }
+        };
+        window.addEventListener('scroll', onScroll);
+        return () => window.removeEventListener('scroll', onScroll);
+    }, []);
+
+    useEffect(() => {
         handleScroll();
-        window.addEventListener('scroll', handleScroll);
         window.addEventListener('keydown', handleKeyDown);
         return () => {
-            window.removeEventListener('scroll', handleScroll);
             window.removeEventListener('keydown', handleKeyDown);
         };
     }, []);
@@ -32,8 +54,10 @@ export default function Cover(props) {
     }
 
     const setTransform = (el, tr, sc) => {
-        el.current.style.translate = `0 ${(tr * window.scrollY)}px`;
-        el.current.style.scale = `1 ${(600 - (sc * window.scrollY)) / 600}`;
+        el.current.style.transform = `
+            translateY(${tr * window.scrollY}px)
+            scale(${(600 - (sc * window.scrollY)) / 600})
+        `;
     }
 
     const handleKeyDown = e => {
@@ -41,20 +65,22 @@ export default function Cover(props) {
             input.current.focus();
     };
 
+    const toggleTime = useCallback(() => setToggle(t => !t), []);
+
     return (
         <section className='cover'>
             <div className="img-wrap">
                 <div className='sky'/>
-                <img src="images/mountain/back.png" ref={mtBack}/>
-                <img src="images/mountain/mid.png" ref={mtMid}/>
+                <img src="images/mountain/back.png" ref={mtBack} loading='lazy'/>
+                <img src="images/mountain/mid.png" ref={mtMid} loading='lazy'/>
                 <img src="images/mountain/front.png"/>
             </div>
 
-            <div className="title" onClick={() => setToggle(t => !t)}>
+            <div className="title" onClick={toggleTime}>
                 {toggle ? date : time}
             </div>
             
-            <div class="search">
+            <div className="search">
                 <form method="get" action="https://www.google.com/search">
                     <input 
                         type="text" name="q" 
@@ -63,7 +89,7 @@ export default function Cover(props) {
                         class="search-input" 
                         ref={input}
                     />
-                    <button><i class="fa fa-search"/></button>
+                    <button><i className="fa fa-search"/></button>
                 </form>
             </div>
 
