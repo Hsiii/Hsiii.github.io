@@ -1,17 +1,46 @@
-# build playground and copy to ./playground
-sed -i '' "s#portfolio#playground#" src/index.jsx
-npm run build
-# overwrite the old files in ./playground
-cp ./dist/index.bundle.js ./dist/index.bundle.js.map ./playground
+BUILD_PG=false
+BUILD_HP=false
+BUILD_PF=false
 
-# build homepage and copy to ./homepage
-sed -i '' "s#playground#homepage#" src/index.jsx
-npm run build
-# overwrite the old files in ./homepage
-cp ./dist/index.bundle.js ./dist/index.bundle.js.map ./homepage
+# Parse arguments and set build flags
+if [ $# -eq 0 ] || [[ " $* " =~ " --all " ]]; then
+  BUILD_PG=true
+  BUILD_HP=true
+  BUILD_PF=true
+else
+  for arg in "$@"; do
+    case "$arg" in
+      --pg) BUILD_PG=true ;;
+      --hp) BUILD_HP=true ;;
+      --pf) BUILD_PF=true ;;
+    esac
+  done
+fi
 
-# build Homepage and copy to root directory
-sed -i '' "s#homepage#portfolio#" src/index.jsx
-npm run build
-# overwrite the old files in root directory
-cp ./dist/index.bundle.js ./dist/index.bundle.js.map ./
+# Function to robustly replace import target in src/index.jsx
+replace_import_target() {
+  local new_target="$1"
+  # Replace any of the three possible targets with the new one
+  sed -i '' -E "s#(homepage|portfolio|playground)#$new_target#g" src/index.jsx
+}
+
+if [ "$BUILD_PG" = true ]; then
+  echo "=== Building playground and copying to ./playground ==="
+  replace_import_target "playground"
+  npm run build
+  cp ./dist/index.bundle.js ./dist/index.bundle.js.map ./playground
+fi
+
+if [ "$BUILD_HP" = true ]; then
+  echo "=== Building homepage and copying to ./homepage ==="
+  replace_import_target "homepage"
+  npm run build
+  cp ./dist/index.bundle.js ./dist/index.bundle.js.map ./homepage
+fi
+
+if [ "$BUILD_PF" = true ]; then
+  echo "=== Building portfolio and copying to root directory ==="
+  replace_import_target "portfolio"
+  npm run build
+  cp ./dist/index.bundle.js ./dist/index.bundle.js.map ./
+fi
