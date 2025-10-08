@@ -2,8 +2,10 @@
 This repository contains my personal website and other projects.
 
 ## Access the Page
-You can find the pages under https://hsiii.github.io/portfolio.
-I plan to build my portfolio page here, now it's still a barren land.
+You can find the pages under https://hsiii.github.io
+
+### Portfolio
+I plan to build my portfolio page under https://hsiii.github.io/portfolio, now it's still a barren land. (maybe some scaffoldings will appear...)
 
 ### Homepage
 I use https://hsiii.github.io/homepage as my browser default page, since it's just for personal use, the accessibility sucks.
