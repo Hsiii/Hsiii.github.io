@@ -2,24 +2,24 @@
 This repository contains my personal website and other projects.
 
 ## Access the Page
-You can find the pages under https://hsiii.github.io
+You can find the pages under https://hsiii.github.io/pages
 
 ### Portfolio
-I plan to build my portfolio page under https://hsiii.github.io/portfolio, now it's still a barren land. (maybe some scaffoldings will appear...)
+I plan to build my portfolio page under https://hsiii.github.io/pages/portfolio, now it's still a barren land. (maybe some scaffoldings will appear...)
 
 ### Homepage
-I use https://hsiii.github.io/homepage as my browser default page, since it's just for personal use, the accessibility sucks.
+I use https://hsiii.github.io/pages/homepage as my browser default page, since it's just for personal use, the accessibility sucks.
 There's a quick link menu on the left, and a search bar will expand upon hitting space key or hover.
 
 ### Accent Marker
-Under https://hsiii.github.io/accent-marker you can find an under development project, it might stop working sometimes, but when it does work, it can help you turn plain Japanese text into accent-marked ones!
+Under https://hsiii.github.io/pages/accent-marker you can find an under development project, it might stop working sometimes, but when it does work, it can help you turn plain Japanese text into accent-marked ones!
 The output can also be edited on click and exported as images or .pdf files, even copied to render on HackMD with my snippet OrangeSagoCream/AccentMarker.
 
 ### JP-Correct
-There's also a Japanese related under development project under https://hsiii.github.io/jp-correct, it will support note taking and AI grammar checking for your Japanese speaking practices in the future!
+There's also a Japanese related under development project under https://hsiii.github.io/pages/jp-correct, it will support note taking and AI grammar checking for your Japanese speaking practices in the future!
 
 ### Playground
-https://hsiii.github.io/playground is where I experiment with fun CSS ideas, things are unpredictable here, watch out!
+https://hsiii.github.io/pages/playground is where I experiment with fun CSS ideas, things are unpredictable here, watch out!
 
 ## Run with the Source Code
 
