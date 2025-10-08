@@ -6,7 +6,7 @@ import Projects from 'portfolio/Projects';
 import Cat from 'portfolio/Cat';
 
 import 'portfolio/Main.css';
-import 'utils/colorPalette_pf.css';
+import 'utils/portfolioPalette.css';
 
 export default function Main() {
     return <>

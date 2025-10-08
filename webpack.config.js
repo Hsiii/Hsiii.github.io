@@ -15,6 +15,7 @@ module.exports = {
       portfolio: path.resolve(srcPath, 'portfolio'),
       homepage: path.resolve(srcPath, 'homepage'),
       playground: path.resolve(srcPath, 'playground'),
+      notfound: path.resolve(srcPath, 'notfound'),
       utils: path.resolve(srcPath, 'utils'),
       api: path.resolve(srcPath, 'api'),
     },

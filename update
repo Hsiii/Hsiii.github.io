@@ -1,18 +1,21 @@
 BUILD_PF=false
 BUILD_HP=false
 BUILD_PG=false
+BUILD_NF=false
 
 # Parse arguments and set build flags
 if [ $# -eq 0 ] || [[ " $* " =~ " --all " ]]; then
   BUILD_PF=true
   BUILD_HP=true
   BUILD_PG=true
+  BUILD_NF=true
 else
   for arg in "$@"; do
     case "$arg" in
       --pg) BUILD_PG=true ;;
       --hp) BUILD_HP=true ;;
       --pf) BUILD_PF=true ;;
+      --pf) BUILD_NF=true ;;
     esac
   done
 fi
@@ -43,6 +46,13 @@ if [ "$BUILD_PG" = true ]; then
   replace_import_target "playground"
   npm run build
   cp ./pages/dist/index.bundle.js ./pages/dist/index.bundle.js.map ./pages/playground
+fi
+
+if [ "$BUILD_NF" = true ]; then
+  echo "=== Building 404 and copying to ./notfound ==="
+  replace_import_target "notfound"
+  npm run build
+  cp ./pages/dist/index.bundle.js ./pages/dist/index.bundle.js.map ./pages/notfound
 fi
 
 echo "=== Committing and pushing changes to Git ==="

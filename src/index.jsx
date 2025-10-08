@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Main from 'homepage/Main.jsx';
+import Main from 'notfound/Main.jsx';
 
 import 'bootstrap/dist/css/bootstrap.css';
 
