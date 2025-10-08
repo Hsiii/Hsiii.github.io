@@ -2,7 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 
 const srcPath = path.resolve(__dirname, 'src');
-const distPath = path.resolve(__dirname, 'dist');
+const distPath = path.resolve(__dirname, 'pages/dist');
 
 module.exports = {
   context: srcPath,
@@ -15,7 +15,7 @@ module.exports = {
       portfolio: path.resolve(srcPath, 'portfolio'),
       homepage: path.resolve(srcPath, 'homepage'),
       playground: path.resolve(srcPath, 'playground'),
-      utilities: path.resolve(srcPath, 'utilities'),
+      utils: path.resolve(srcPath, 'utils'),
       api: path.resolve(srcPath, 'api'),
     },
   },

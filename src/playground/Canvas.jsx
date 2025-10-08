@@ -1,5 +1,5 @@
 import React from 'react';
-import useCanvas from 'utilities/useCanvas.jsx';
+import useCanvas from 'utils/useCanvas.jsx';
 
 export default function Canvas(props) {  
     const { draw, ...rest } = props;

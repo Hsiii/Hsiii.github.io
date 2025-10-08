@@ -1,12 +1,12 @@
-BUILD_PG=false
-BUILD_HP=false
 BUILD_PF=false
+BUILD_HP=false
+BUILD_PG=false
 
 # Parse arguments and set build flags
 if [ $# -eq 0 ] || [[ " $* " =~ " --all " ]]; then
-  BUILD_PG=true
-  BUILD_HP=true
   BUILD_PF=true
+  BUILD_HP=true
+  BUILD_PG=true
 else
   for arg in "$@"; do
     case "$arg" in
@@ -24,23 +24,28 @@ replace_import_target() {
   sed -i '' -E "s#(homepage|portfolio|playground)#$new_target#g" src/index.jsx
 }
 
-if [ "$BUILD_PG" = true ]; then
-  echo "=== Building playground and copying to ./playground ==="
-  replace_import_target "playground"
+if [ "$BUILD_PF" = true ]; then
+  echo "=== Building portfolio and copying to root directory ==="
+  replace_import_target "portfolio"
   npm run build
-  cp ./dist/index.bundle.js ./dist/index.bundle.js.map ./playground
+  cp ./pages/dist/index.bundle.js ./pages/dist/index.bundle.js.map ./pages/portfolio
 fi
 
 if [ "$BUILD_HP" = true ]; then
   echo "=== Building homepage and copying to ./homepage ==="
   replace_import_target "homepage"
   npm run build
-  cp ./dist/index.bundle.js ./dist/index.bundle.js.map ./homepage
+  cp ./pages/dist/index.bundle.js ./pages/dist/index.bundle.js.map ./pages/homepage
 fi
 
-if [ "$BUILD_PF" = true ]; then
-  echo "=== Building portfolio and copying to root directory ==="
-  replace_import_target "portfolio"
+if [ "$BUILD_PG" = true ]; then
+  echo "=== Building playground and copying to ./playground ==="
+  replace_import_target "playground"
   npm run build
-  cp ./dist/index.bundle.js ./dist/index.bundle.js.map ./
+  cp ./pages/dist/index.bundle.js ./pages/dist/index.bundle.js.map ./pages/playground
 fi
+
+echo "=== Committing and pushing changes to Git ==="
+git add .
+git commit -m "Automatic page builds"
+git push

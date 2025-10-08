@@ -6,8 +6,8 @@ import BallSection from 'playground/BallSection.jsx';
 import Menu from 'playground/Menu.jsx';
 import MusicSection from 'playground/MusicSection.jsx';
 
-import setLinks from 'utilities/link.jsx';
-import 'utilities/colorPalette.css';
+import setLinks from 'utils/link.jsx';
+import 'utils/colorPalette.css';
 
 import 'playground/Main.css';
 

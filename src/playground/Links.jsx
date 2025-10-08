@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import linkList from 'utilities/bookmarkLink.jsx';
+import linkList from 'utils/bookmarkLink.jsx';
 import 'playground/Links.css';
 
 export default function Links({show}) {

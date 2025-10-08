@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import 'playground/Test.css';
-import getRect from 'utilities/getRect.jsx';
+import getRect from 'utils/getRect.jsx';
 
 export default function TestForm(props) {
     const [editing, setEditing] = useState(false);

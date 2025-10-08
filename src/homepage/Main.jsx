@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 
 import Cover from 'homepage/Cover.jsx';
 
-import setLinks from 'utilities/link.jsx';
-import 'utilities/colorPalette.css';
+import setLinks from 'utils/link.jsx';
+import 'utils/colorPalette.css';
 
 import 'homepage/Main.css';
 

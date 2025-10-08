@@ -48,16 +48,13 @@ export default function Cover(props) {
     }, []);
 
     const handleScroll = () => {
-        setTransform(mtBack, 0.6, 0); 
-        setTransform(mtMid, 0.5, 0.2);
+        setTransform(mtBack, 0.6); 
+        setTransform(mtMid, 0.5);
         setShowLinks(window.scrollY == 0);
     }
 
-    const setTransform = (el, tr, sc) => {
-        el.current.style.transform = `
-            translateY(${tr * window.scrollY}px)
-            scale(${(600 - (sc * window.scrollY)) / 600})
-        `;
+    const setTransform = (el, tr) => {
+        el.current.style.transform = `translateY(${tr * window.scrollY}px)`;
     }
 
     const handleKeyDown = e => {
