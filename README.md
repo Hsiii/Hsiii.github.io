@@ -2,7 +2,7 @@
 This repository contains my personal website and other projects.
 
 ## Access the Page
-You can find the pages under https://hsiii.github.io/.
+You can find the pages under https://hsiii.github.io/portfolio.
 I plan to build my portfolio page here, now it's still a barren land.
 
 ### Homepage
