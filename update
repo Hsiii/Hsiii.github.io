@@ -15,7 +15,7 @@ else
       --pg) BUILD_PG=true ;;
       --hp) BUILD_HP=true ;;
       --pf) BUILD_PF=true ;;
-      --pf) BUILD_NF=true ;;
+      --nf) BUILD_NF=true ;;
     esac
   done
 fi
