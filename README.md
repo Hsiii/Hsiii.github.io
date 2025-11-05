@@ -31,21 +31,21 @@ Since I'm the only visitor, I believe the accessibility sucks.
     ```
 3.	Install dependencies:
     - Using npm: 
-        ```
+        ```sh
         npm install
         ```
     - Or using yarn: 
-        ```
+        ```sh
         yarn install
         ```
 
 ### Running the Project
 1.	Start the development server:
     - Using npm: 
-        ```
+        ```sh
         npm run dev
         ```
     - Or using yarn: 
-        ```
+        ```sh
         yarn dev
         ```
