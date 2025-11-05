@@ -1,9 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Main from 'notfound/Main.jsx';
-
-import 'bootstrap/dist/css/bootstrap.css';
+import Main from 'components/Main.jsx';
 
 import './index.css';
 
