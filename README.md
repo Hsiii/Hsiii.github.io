@@ -2,18 +2,16 @@
 > This repository is currently under development. Features may be incomplete or unstable.
 
 # Hsiii.gitgub.io
-This repository contains my personal website <https://hsiii.github.io>, I plan to build my portfolio page here.
-Now it's still a barren land.
+This repository contains my personal website <https://hsiii.github.io>, I plan to build my portfolio page here - now it's just getting started.
 
 ## Other Pages
 There're also other pages in my other repos under <https://hsiii.github.io>:
 
 ### Homepage
 <https://hsiii.github.io/homepage> is my browser default page.
-Since I'm the only visitor, I believe the accessibility sucks.
 
 ### Playground
-<https://hsiii.github.io/playground> is where I experiment with (likely copied) CSS ideas, things are unpredictable here, watch out!
+<https://hsiii.github.io/playground> is where I experiment with (likely copied) CSS ideas.
 
 ## Run from Source
 ### Prerequisites
