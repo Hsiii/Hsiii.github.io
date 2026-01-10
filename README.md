@@ -1,49 +1,25 @@
-> ⚠️ **Work in Progress**  
-> This repository is currently under development. Features may be incomplete or unstable.
-
 # Hsiii.gitgub.io
 This repository contains my personal website <https://hsiii.github.io>, I plan to build my portfolio page here - now it's just getting started.
 
-## Other Pages
-There're also other pages in my other repos under <https://hsiii.github.io>:
+## Subpages
+I use <https://hsiii.github.io/homepage> as my browser default page, I'm currently working on optimizing the bookmark management there.
 
-### Homepage
-<https://hsiii.github.io/homepage> is my browser default page.
-
-### Playground
-<https://hsiii.github.io/playground> is where I experiment with (likely copied) CSS ideas.
-
-## Run from Source
-### Prerequisites
-- [Node.js](https://nodejs.org/) version 16 or higher 
-- A package manager like npm or yarn
-
-### Installation
+## Installation & Setup
 1.	Clone the repository:
     ```sh
     git clone https://github.com/Hsiii/Hsiii.github.io.git
-    ```
-2.	Navigate into the project folder:
-    ```sh
     cd Hsiii.github.io
     ```
 3.	Install dependencies:
-    - Using npm: 
-        ```sh
-        npm install
-        ```
-    - Or using yarn: 
-        ```sh
-        yarn install
-        ```
+    ```sh
+    npm i
+    ```
+4.	Start the development server:
+    ```sh
+    npm run dev
+    ```
 
-### Running the Project
-1.	Start the development server:
-    - Using npm: 
-        ```sh
-        npm run dev
-        ```
-    - Or using yarn: 
-        ```sh
-        yarn dev
-        ```
+## Building for Production
+```sh
+npm run build
+```
