@@ -1,8 +1,8 @@
 # Hsiii.gitgub.io
-This repository contains my personal website <https://hsiii.github.io>, I plan to build my portfolio page here - now it's just getting started.
+This repository hosts my personal website <https://hsiii.github.io>. I plan to build my portfolio page here - now it's just getting started.
 
 ## Subpages
-I use <https://hsiii.github.io/homepage> as my browser default page, I'm currently working on optimizing the bookmark management there.
+I designed and built <https://hsiii.github.io/homepage> as a portable, browser-agnostic dashboard. Beyond allowing for endless customization, it serves as my universal default tab — providing instant access to my bookmarks on any machine or browser. No more migration pain!
 
 ## Installation & Setup
 1.	Clone the repository:
